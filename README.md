@@ -1,4 +1,4 @@
-# grandpa
+# propolis
 
 A simple blog platform, written in Preact.
 
@@ -6,7 +6,7 @@ Renders Markdown using highlight.js for syntax highlighting.
 
 ## configuration
 
-In the root of your web directory, create a `pages.json` manifest file which tells grandpa where to find and route your content.
+In the root of your web directory, create a `pages.json` manifest file which tells propolis where to find and route your content.
 
 The file has the the following format:
 
