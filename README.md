@@ -20,10 +20,10 @@ The file has the the following format:
     },
     // Posts page
     {
-    "name": string,
-    "id": string,
-    "posts": []            // Array of normal pages
-  },
+      "name": string,
+      "id": string,
+      "posts": []            // Array of normal pages
+    },
   ]
 ```
 
