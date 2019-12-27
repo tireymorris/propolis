@@ -2,7 +2,7 @@
   "name": "grandpa",
   "version": "0.1.0",
   "private": false,
-  "description": "todo",
+  "description": "A simple blog platform, written in Preact",
   "repository": {
     "type": "git",
     "url": "https://github.com/tireymorris/grandpa.git"
