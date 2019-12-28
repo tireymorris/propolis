@@ -64,4 +64,22 @@ Include a css file to overwrite any rules included here and add your own styling
 
 ### highlight.js
 
-You can find themes for highlight.js [here](https://github.com/highlightjs/highlight.js/tree/master/src/styles)
+You can find themes for highlight.js [here.](https://github.com/highlightjs/highlight.js/tree/master/src/styles)
+
+Because highlight.js needs a theme to be included by default to work properly, and the bundled theme takes precedence over anything in the `head` block, this was my quick and dirty solution for new syntax highlighting:
+
+```
+  <script>
+    window.setTimeout(() => {
+      const link = document.createElement('link');
+      link.setAttribute('rel', 'stylesheet');
+      link.setAttribute('type', 'text/css');
+      link.setAttribute(
+        'href',
+        'https://cdn.jsdelivr.net/gh/highlightjs/highlight.js@master/src/styles/solarized-light.css'
+      );
+
+      document.querySelector('head').appendChild(link);
+    }, 250);
+  </script>
+```
