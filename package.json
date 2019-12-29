@@ -1,6 +1,6 @@
 {
   "name": "propolis",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "private": false,
   "description": "A simple blog platform, written in Preact",
   "repository": {
