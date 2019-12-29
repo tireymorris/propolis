@@ -69,6 +69,8 @@ You can find themes for highlight.js [here.](https://github.com/highlightjs/high
 Because highlight.js needs a theme to be included by default to work properly, and the bundled theme takes precedence over anything in the `head` block, this was my quick and dirty solution for new syntax highlighting:
 
 ```
+  <script src="https://cdn.jsdelivr.net/npm/propolis@0.3.0/build/main.bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/propolis/build/vendors~highlight.js.bundle.js"></script>
   <script>
     window.setTimeout(() => {
       const link = document.createElement('link');
