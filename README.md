@@ -9,8 +9,10 @@ Renders Markdown using highlight.js for syntax highlighting.
 In your project, include the following scripts:
 
 ```
-  <script src="https://cdn.jsdelivr.net/npm/propolis@0.3.0/build/main.bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/propolis@0.3.6/build/main.bundle.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/propolis/build/vendors~highlight.js.bundle.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/propolis@0.3.6/build/highlight.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/propolis@0.3.6/build/main.css" />
 ```
 
 ## configuration

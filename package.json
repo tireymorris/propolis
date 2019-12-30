@@ -1,6 +1,6 @@
 {
   "name": "propolis",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "private": false,
   "description": "A simple blog platform, written in Preact",
   "repository": {
@@ -27,9 +27,8 @@
     "@types/highlight.js": "^9.12.3",
     "@types/marked": "^0.7.2",
     "autoprefixer": "^9.5.1",
-    "css-loader": "^2.1.1",
+    "file-loader": "^5.0.2",
     "source-map-loader": "^0.2.4",
-    "style-loader": "^0.23.1",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.2",
     "webpack": "^4.30.0",
