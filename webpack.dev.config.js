@@ -8,7 +8,7 @@ module.exports = {
   devServer: {
     port: 3000,
     open: false,
-    contentBase: path.join(__dirname, 'server'),
+    contentBase: path.join(__dirname, 'build'),
     watchContentBase: true,
     historyApiFallback: true,
     disableHostCheck: true,

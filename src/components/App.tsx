@@ -1,4 +1,4 @@
-import { h } from 'preact';
+import { h, Fragment } from 'preact';
 
 import Router from 'preact-router';
 import { createHashHistory } from 'history';
@@ -53,13 +53,17 @@ const App = () => {
         </nav>
         <Router history={createHashHistory()}>
           {pages.map(page => {
+            // need two loops here because Fragments don't work with preact-router
+            if (page.posts && page.posts.length > 0)
+              return <Posts path={`/${page.id}`} posts={page.posts} />;
+          })}
+          {pages.map(page => {
             if (page.posts && page.posts.length > 0) {
-              return <Posts path="/posts/:id?" posts={page.posts} />;
-            } else if (page.filepath && page.filepath.length > 0) {
-              return <Markdown path={`/${page.id}`} filepath={page.filepath} />;
-            } else {
-              return <div />;
+              return page.posts.map(({ id, filepath }) => (
+                <Markdown path={`/${page.id}/${id}`} filepath={filepath} />
+              ));
             }
+            return <Markdown path={`/${page.id}`} filepath={page.filepath} />;
           })}
         </Router>
       </div>

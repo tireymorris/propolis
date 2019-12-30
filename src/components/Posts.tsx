@@ -12,30 +12,17 @@ export type Post = {
 };
 
 const Posts = (props: { path: string; posts: Post[] }) => (
-  <Match path="/posts">
-    {({ matches, path }: { matches: boolean; path: string }) => (
-      <Fragment>
-        {matches && (
-          <nav className="column">
-            <ul>
-              {props.posts.map(({ name, id }) => (
-                <li style={{ paddingBottom: '8px' }} key={id}>
-                  <Link activeClassName="active" href={`${path}/${id}`}>
-                    {name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        )}
-        <Router history={createHashHistory()}>
-          {props.posts.map(({ id, filepath }) => (
-            <Markdown path={`posts/${id}`} filepath={filepath} />
-          ))}
-        </Router>
-      </Fragment>
-    )}
-  </Match>
+  <nav className="column">
+    <ul>
+      {props.posts.map(({ name, id }) => (
+        <li style={{ paddingBottom: '8px' }} key={id}>
+          <Link activeClassName="active" href={`${props.path}/${id}`}>
+            {name}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </nav>
 );
 
 export default Posts;
