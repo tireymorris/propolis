@@ -13,6 +13,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #f0ead6;
 }
 
 #root {
@@ -21,7 +22,6 @@ body {
   font-size: 14px;
   font-family: 'Roboto';
   min-height: 100vh;
-  background-color: #f0ead6;
   display: flex;
   justify-content: center;
 }
