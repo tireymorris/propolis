@@ -93,4 +93,9 @@ a {
   .post ul {
     align-self: start;
   }
+
+  .post h1,
+  .post h2 {
+    text-align: center;
+  }
 }
