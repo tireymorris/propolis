@@ -10,12 +10,12 @@ In your project, include the following scripts:
 
 ```
   <head>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/propolis@0.3.6/build/highlight.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/propolis@0.3.6/build/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/propolis@0.3.14/build/highlight.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/propolis@0.3.14/build/main.css" />
   </head>
 
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/propolis@0.3.6/build/main.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/propolis@0.3.14/build/main.bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/propolis/build/vendors~highlight.js.bundle.js"></script>
   </body>
 ```
