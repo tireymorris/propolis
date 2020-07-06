@@ -23,7 +23,6 @@ body {
 
 pre code {
   font-size: 14px;
-  width: 80vw;
 }
 
 nav a {
@@ -78,7 +77,6 @@ a {
   pre code {
     overflow-x: scroll;
     font-size: 11px;
-    width: 90vw;
   }
 
   hr {
