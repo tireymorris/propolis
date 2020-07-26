@@ -1,12 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noEmitOnError": true,
+    "strictNullChecks": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
     "moduleResolution": "node",
@@ -15,8 +18,7 @@
     "jsx": "react",
     "jsxFactory": "h",
     "sourceMap": true,
-    "outDir": "build",
-    "noImplicitAny": false
+    "outDir": "build"
   },
   "include": ["src/**/*.tsx", "src/**/*.ts"],
   "exclude": ["node_modules"]

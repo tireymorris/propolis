@@ -1,4 +1,4 @@
-import { h } from 'preact';
+import { h, Fragment } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import marked from 'marked';
 
@@ -19,7 +19,7 @@ const Markdown = (props: { filepath: string; path?: string }) => {
     if (hljs) {
       document
         .querySelectorAll('pre code')
-        .forEach(block => hljs.highlightBlock(block));
+        .forEach((block) => hljs.highlightBlock(block));
     }
   }, [props.path, hljs, markdownSrc]);
 
@@ -27,10 +27,10 @@ const Markdown = (props: { filepath: string; path?: string }) => {
     const markdown: string = await fetch(
       `${location.protocol}//${location.host}/${filepath}`
     )
-      .then(response => {
+      .then((response) => {
         return response.text();
       })
-      .catch(error => {
+      .catch((error) => {
         console.error(error);
         return '';
       });

@@ -1,4 +1,4 @@
-import { h, Fragment } from 'preact';
+import { h } from 'preact';
 
 import Router from 'preact-router';
 import { createHashHistory } from 'history';
@@ -24,8 +24,8 @@ const App = () => {
     const data: Page[] = await fetch(
       `${location.protocol}//${location.host}/pages.json`
     )
-      .then(response => response.json())
-      .catch(error => {
+      .then((response) => response.json())
+      .catch((error) => {
         console.error(error);
         return [];
       });
@@ -42,7 +42,7 @@ const App = () => {
       <div id="content">
         <nav className="horizontal">
           <ul>
-            {pages.map(page => (
+            {pages.map((page) => (
               <li>
                 <Link activeClassName="active" href={`/${page.id}`}>
                   {page.name}
@@ -52,12 +52,12 @@ const App = () => {
           </ul>
         </nav>
         <Router history={createHashHistory()}>
-          {pages.map(page => {
+          {pages.map((page) => {
             // need two loops here because Fragments don't work with preact-router
             if (page.posts && page.posts.length > 0)
               return <Posts path={`/${page.id}`} posts={page.posts} />;
           })}
-          {pages.map(page => {
+          {pages.map((page) => {
             if (page.posts && page.posts.length > 0) {
               return page.posts.map(({ id, filepath }) => (
                 <Markdown path={`/${page.id}/${id}`} filepath={filepath} />

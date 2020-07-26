@@ -1,9 +1,6 @@
-import { h, Fragment } from 'preact';
-import Markdown from './Markdown';
+import { h } from 'preact';
 
-import Router from 'preact-router';
-import { createHashHistory } from 'history';
-import Match, { Link } from 'preact-router/match';
+import { Link } from 'preact-router/match';
 
 export type Post = {
   name: string;

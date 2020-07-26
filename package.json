@@ -14,7 +14,8 @@
     "clean": "rm -rf build/",
     "build:prod": "NODE_ENV=production webpack --config webpack.prod.config.js",
     "build:dev": "NODE_ENV=development webpack --config webpack.dev.config.js",
-    "start": "NODE_ENV=development webpack-dev-server --config webpack.dev.config.js"
+    "start": "NODE_ENV=development webpack-dev-server --config webpack.dev.config.js",
+    "compile": "NODE_ENV=development yarn run tsc"
   },
   "dependencies": {
     "highlight.js": "^9.17.1",
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "@types/highlight.js": "^9.12.3",
+    "@types/history": "^4.7.7",
     "@types/marked": "^0.7.2",
     "autoprefixer": "^9.5.1",
     "file-loader": "^5.0.2",
