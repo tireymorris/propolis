@@ -1,4 +1,4 @@
-import { h } from 'preact';
+import Preact, { h } from 'preact';
 
 import Router from 'preact-router';
 import { createHashHistory } from 'history';
@@ -15,7 +15,7 @@ type Page = {
   filepath: string;
 };
 
-const App = () => {
+const App = (): Preact.VNode => {
   const [pages, setPages] = useState([] as Page[]);
 
   const fetchPages = async () => {

@@ -1,6 +1,6 @@
 {
   "name": "propolis",
-  "version": "0.3.15",
+  "version": "0.3.16",
   "private": false,
   "description": "A simple blog platform, written in Preact",
   "repository": {
@@ -15,7 +15,8 @@
     "build:prod": "NODE_ENV=production webpack --config webpack.prod.config.js",
     "build:dev": "NODE_ENV=development webpack --config webpack.dev.config.js",
     "start": "NODE_ENV=development webpack-dev-server --config webpack.dev.config.js",
-    "compile": "NODE_ENV=development yarn run tsc"
+    "compile": "NODE_ENV=development yarn run tsc",
+    "lint": "eslint '*/**/*.{js,ts,tsx}'"
   },
   "dependencies": {
     "highlight.js": "^9.17.1",

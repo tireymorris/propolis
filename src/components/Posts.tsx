@@ -1,4 +1,4 @@
-import { h } from 'preact';
+import Preact, { h } from 'preact';
 
 import { Link } from 'preact-router/match';
 
@@ -8,7 +8,7 @@ export type Post = {
   filepath: string;
 };
 
-const Posts = (props: { path: string; posts: Post[] }) => (
+const Posts = (props: { path: string; posts: Post[] }): Preact.VNode => (
   <nav className="column">
     <ul>
       {props.posts.map(({ name, id }) => (
