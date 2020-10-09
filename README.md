@@ -1,5 +1,7 @@
 # propolis
 
+[![Run on Repl.it](https://repl.it/badge/github/tireymorris/propolis)](https://repl.it/github/tireymorris/propolis)
+
 A simple blog platform, written in Preact.
 
 Renders Markdown using highlight.js for syntax highlighting.
